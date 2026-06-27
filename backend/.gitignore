@@ -1,0 +1,25 @@
+# Dependency directories (Never upload these, they are downloaded fresh using npm install)
+node_modules/
+jspm_packages/
+web_modules/
+
+# Environment configurations (CRITICAL: Keeps your local passwords and URIs private)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Operating System files
+.DS_Store
+Thumbs.db

@@ -25,11 +25,12 @@ if (!process.env.PORT) {
 const app = express();
 
 // CORS origin rules configuration
+// Ensure we only add defined values
 const allowedOrigins = [
   "http://localhost:5173", 
   "http://127.0.0.1:5173",
   process.env.FRONTEND_PRODUCTION_URL
-];
+].filter(Boolean); // 🚀 This removes any 'undefined' or empty strings
 
 app.use(cors({
   origin: function (origin, callback) {
